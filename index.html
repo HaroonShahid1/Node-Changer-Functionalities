@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Deleting Selected Nodes</title>
+		<script src="index.js"></script>
+        <style>
+            .highlighted {
+                background-color: yellow; 
+            }
+        </style>
+	</head>
+		<body>
+			<form id="theForm">
+				<p>
+					<textarea id="textArea" rows="5" cols="30">
+					</textarea> 
+				</p>
+				<p>
+					<label>
+						<input type="radio" name="nodeAction">Add Node
+					</label>
+					<label>
+						<input type="radio" name="nodeAction">Delete Node
+					</label>
+					<label>
+						<input type="radio" name="nodeAction">Insert Before Node
+					</label>
+					<label>
+						<input type="radio" name="nodeAction">Replace Node
+					</label>
+                    <label>
+                        <input type="radio" name="nodeAction">Move Node Up
+                    </label>
+                    <label>
+                        <input type="radio" name="nodeAction">Move Node Down
+                    </label>
+                    <label>
+                        <input type="radio" name="nodeAction">Highlight Node
+                    </label>
+                    <label>
+                        <input type="radio" name="nodeAction">Clear All Nodes
+                    </label>                                        
+				</p>
+				Paragraph #: <select id="grafCount"></select> 
+				<input type="submit" value="Submit">
+			</form>
+			<div id="modifiable"> </div>
+		</body>
+</html>
